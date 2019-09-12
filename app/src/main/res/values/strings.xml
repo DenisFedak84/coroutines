@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Valtech</string>
+    <string name="main_activity">Main Activity</string>
+
+    //DetailAdapter
+    <string name="name">Name:</string>
+    <string name="link">Link:</string>
+</resources>
