@@ -4,10 +4,10 @@ import com.fedak.denis.valtech.di.DatabaseModule
 import com.fedak.denis.valtech.di.NetworkModule
 import com.fedak.denis.valtech.di.ViewModelModule
 import dagger.Module
-import dagger.android.support.AndroidSupportInjectionModule
+import dagger.android.AndroidInjectionModule
 
 
 @Module(
-    includes = [AndroidSupportInjectionModule::class, ActivityModule::class, ViewModelModule::class, NetworkModule::class, DatabaseModule::class]
+    includes = [AndroidInjectionModule::class, ActivityModule::class, ViewModelModule::class, NetworkModule::class, DatabaseModule::class]
 )
 class AppModule

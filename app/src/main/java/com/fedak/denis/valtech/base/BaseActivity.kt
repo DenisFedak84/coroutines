@@ -3,7 +3,7 @@ package com.fedak.denis.mvvmcoroutine.base
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import dagger.android.support.DaggerAppCompatActivity
 import javax.inject.Inject
 
@@ -30,5 +30,5 @@ abstract class BaseActivity : DaggerAppCompatActivity(){
     }
 
     fun <T : ViewModel> getViewModel(target: AppCompatActivity, viewModelClass: Class<T>) =
-        ViewModelProviders.of(target, viewModelProviderFactory).get(viewModelClass)
+    ViewModelProvider(this, viewModelProviderFactory).get(viewModelClass)
 }
